@@ -215,6 +215,7 @@ from HorseAndDonkey;
 
 SELECT * FROM All_animals;
 ```
+![SQL_result](https://github.com/Vatsek/intermediate_control_work/assets/93866534/1a152282-6f0a-4bb6-ad8d-8fa97765cb8e)
 
-![image](https://github.com/Vatsek/interim_certification/assets/93866534/2b10a520-12a7-43b7-be23-bd1a83ea6c20)
+
 
