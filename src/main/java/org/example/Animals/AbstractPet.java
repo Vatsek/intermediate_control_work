@@ -7,4 +7,5 @@ public abstract class AbstractPet extends AbstractAnimal {
 
         super(name, birthDate);
     }
+
 }

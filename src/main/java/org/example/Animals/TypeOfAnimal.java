@@ -7,7 +7,8 @@ public enum TypeOfAnimal {
     HAMSTER ("Хомяк"),
     HORSE ("Лошадь"),
     CAMEL ("Верблюд"),
-    DONKEY ("Осёл");
+    DONKEY ("Осёл"),
+    NOT_DEFINED ("Не определен");
 
     private String title;
     TypeOfAnimal(String title) {
