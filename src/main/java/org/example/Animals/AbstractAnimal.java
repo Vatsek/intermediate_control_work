@@ -43,12 +43,12 @@ public abstract class AbstractAnimal {
         this.birthDate = birthDate;
     }
 
-    public ArrayList<String> getSkill() {
-        System.out.println("Команды животного:");
+    public void getSkill() {
+        System.out.println("\nКоманды животного:");
         for (String skill: skill) {
-            System.out.println(skill);
+            System.out.print(skill + " | ");
         }
-        return skill;
+        System.out.println();
     }
 
     public void setSkill(String skill) {
@@ -61,6 +61,6 @@ public abstract class AbstractAnimal {
         for (String str: this.skill) {
             skills.append(str + " ");
         }
-        return ("id: " + this.id + "\nИмя: " + this.name + "\nКласс животного: " + this.typeOfAnimal.getTitle() + "\nКоманды: " + skills + "\n");
+        return ("id: " + this.id + " | Имя: " + this.name + " | Класс животного: " + this.typeOfAnimal.getTitle() + " | Команды: " + skills);
     }
 }

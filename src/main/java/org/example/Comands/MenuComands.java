@@ -3,11 +3,8 @@ package org.example.Comands;
 import org.example.Animals.AbstractAnimal;
 import org.example.Animals.implement.*;
 import org.example.db.Db;
-
 import java.time.LocalDate;
 import java.util.Scanner;
-
-import static java.awt.SystemColor.menu;
 import static org.example.Animals.TypeOfAnimal.*;
 
 public class MenuComands {
@@ -23,7 +20,7 @@ public class MenuComands {
         try {
             birthDate = LocalDate.parse(scanner.nextLine());
         } catch (Exception e){
-            System.out.println("\nНе корректно введена дата\nЖивотное не добавлено!\n");
+            System.out.println("\nНе корректно введена дата\nЖивотное не добавлено!");
             return false;
         }
 
@@ -44,10 +41,10 @@ public class MenuComands {
             case "4" -> new Horse(name, birthDate);
             case "5" -> new Camel(name, birthDate);
             case "6" -> new Donkey(name, birthDate);
-            default -> throw new RuntimeException("\nНе верно выбран класс животного.\nЖивотное не добавлено\n");
+            default -> throw new RuntimeException("\nНе верно выбран класс животного.\nЖивотное не добавлено");
         };
         Db.db.put(animal.getId(), animal);
-        System.out.println("\nЖивотное добавлено\n");
+        System.out.println("\nЖивотное добавлено");
         return true;
     }
 
