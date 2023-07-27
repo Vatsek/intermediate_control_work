@@ -4,6 +4,7 @@ import org.example.Animals.AbstractAnimal;
 import org.example.Animals.implement.*;
 import org.example.db.Db;
 import java.time.LocalDate;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import static org.example.Animals.TypeOfAnimal.*;
 
@@ -15,6 +16,9 @@ public class MenuComands {
         Scanner scanner = new Scanner(System.in);
         System.out.print("\nВведите кличку животного: ");
         String name = scanner.nextLine();
+        if (name.isEmpty()){
+            throw new InputMismatchException("Кличка должна быть пустой");
+        }
         System.out.print("Введите дату рождения в формате ГГГГ-ММ-ДД : ");
         LocalDate birthDate;
         try {

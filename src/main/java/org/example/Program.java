@@ -47,7 +47,10 @@ public class Program {
                 case "4":
                     Db.setSkillAnimal();
                     break;
-                case "5": break;
+                case "5":
+                    System.out.println("Завершение программы");
+                    System.exit(0);
+
                 default:
                     System.out.println("\nНе верно введён номер команды\n");
             }

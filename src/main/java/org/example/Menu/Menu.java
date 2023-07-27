@@ -5,7 +5,6 @@ public class Menu {
     public Menu() {
     }
 
-
     public void showMainMenu() {
         String menu = (
                 "1. Показать список всех животных\n" +
