@@ -15,6 +15,7 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         Menu mn = new Menu();
         MenuComands mc = new MenuComands();
+        Counter counter = new Counter();
         AbstractAnimal cat1 = new Cat("Васька", LocalDate.of(2020, 02,02));
         AbstractAnimal cat2 = new Cat("Жорка", LocalDate.of(2018, 01,10));
         AbstractAnimal dog1 = new Dog("Полкан", LocalDate.of(2010, 10,10));
@@ -50,7 +51,6 @@ public class Program {
                 case "5":
                     System.out.println("Завершение программы");
                     System.exit(0);
-
                 default:
                     System.out.println("\nНе верно введён номер команды\n");
             }
@@ -58,8 +58,5 @@ public class Program {
                 System.out.println(e.getMessage());
             }
         }
-
-
-
     }
 }
